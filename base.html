@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Yi's Introduction</title>
+	
+</head>
+<body style="margin:0px;background-color:#eeeeee;">
+	<div class="head">Yi's Self-Introduction</div>
+
+	<p id="hello"></p>
+	
+	<div class="content">
+		<div class="control">
+		<button class = "btn1" onclick="document.getElementById('demo').innerHTML = Date()" > click me to show Date and Time</button>
+		<button class = "btn2" onclick= 'document.getElementById("title2").innerHTML = "The things I like to do" ' >click me to change the title </button>
+
+		<button class = "btn3" >Button3</button>
+		</div>
+	<div class="box">
+		<div class="title1">My Basic Information</div>
+		<div>I am from China.</div>
+		<div>I am a computer engineer / computer science student.</div>
+		<div>I am a woman.</div>
+		<div>I self study CSS, HTML, and JS since May 2018. </div>
+	</div>
+	<div class="box">	
+		<div id ="title2">My Hobbies</div>
+		<div>Practicing my programing skills and creating projects.</div>
+		<div>Learning more about web developing.</div>
+		<div>I like to work with HTML, CSS, and Javascript</div>
+	</div>
+	<div class="box">
+		<div class="title3">Contact Me</div>
+		<div>My facebook ID</div>
+		<div>My WECHAT</div>
+		<div>My Gmail</div>
+	</div>
+	<p id ="demo"></p>
+	</div>
+
+	<style type="text/css">
+	.head{
+		background-color:#003344;
+		color:white;
+		font-weight: bold;
+		font-size: 30px;
+		text-align:center;
+		padding:10px;
+	}	
+	#hello{
+		margin:20px; 
+		padding:20px; 
+		font-size:20px;
+		text-align: center;
+	}
+
+	/* Make the content in a center*/
+	.content{
+		width:1000px;margin-left: auto;margin-right:auto;
+	}
+
+	.control{
+		padding:100px.;
+		margin-left: auto; margin-right: auto;
+		text-align: center.
+		background-color: grey;
+
+	}
+	/* make the 3 box  lay out */
+	.box{
+		width:280px;padding:10px;margin:10px;background-color:white;
+		display: inline-block;vertical-align: top;
+		text-align: left; height: 200px;line-height: 30px;
+	}
+
+
+	.title1 {
+		font-weight:bold;
+	}
+	.title2 {
+		font-weight:bold;
+	}
+	.title3 {
+		font-weight:bold;
+	}
+	</style>
+	
+	
+
+	<script>
+		// Second header for the page
+	document.getElementById("hello").innerHTML = "My First Javascript";
+
+		// greeting alert
+
+	var firstName = prompt ("what's your firt name?"); var lastName = prompt ("What's your last name?")
+	alert ("Wellcome " + firstName + " " + lastName);
+	// check age see if the person can drive
+	 var age = prompt ("What's your age?");
+	 if (age < 16){
+	 	alert ("You are not allowed to drive!")
+	 } else {
+	 	alert ("You can drive!")
+	 }
+	 //
+	 var x = prompt ("Please give me a number."); 
+	 var y = prompt ("Please give me another number")
+	 function myFunction(x, y){
+	 	var one = parseFloat (x);
+	 	var two = parseFloat (y);
+	 	return one + two; 
+	 }
+	 alert (myFunction (x,y));
+
+	
+	
+
+
+	</script>
+
+</body>
+</html>
